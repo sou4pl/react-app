@@ -4,8 +4,8 @@ import styles from './Column.module.scss'
 import { useSelector } from 'react-redux';
 
 const Column = props => {
-
-  const cards = useSelector(state => state.cards.filter(card => card.columnId === props.id))
+  const searchPhrase = useSelector(state => state.searchPhrase.searchPhrase.toLowerCase())
+  const cards = useSelector(state => state.cards.filter(card => card.columnId === props.id && card.title.toLowerCase().includes(searchPhrase)))
   
   return (
     <article className={styles.column}>

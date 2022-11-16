@@ -10,7 +10,6 @@ const CardForm = ({columnId}) => {
   const handleSubmit = e => {
     e.preventDefault();
     dispatch({ type: 'ADD_CARD', payload: {title, columnId }})
-    //
     setTitle('');
   };
 
