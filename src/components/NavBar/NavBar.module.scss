@@ -32,3 +32,9 @@ padding: 12px;
 color: white
 }
 
+.linkActive {
+  color: $color-warning;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px;
+}
