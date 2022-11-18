@@ -2,7 +2,7 @@ import PageTitle from '../PageTitle/PageTitle';
 import { useSelector } from 'react-redux';
 import styles from './Favorite.module.scss';
 import Card from '../Card/Card';
-import { getFavoriteCards } from '../../redux/store';
+import { getFavoriteCards } from '../../redux/cardsRedux';
 
 const Favorite = () => {
   const cards = useSelector(getFavoriteCards);

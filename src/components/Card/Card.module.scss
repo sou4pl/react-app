@@ -9,7 +9,12 @@
   border-radius: $radius;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: bold;
+    span {
+      font-size: 18px;
+      padding: $base-size /4
+    }
 }
 
 .favorite {

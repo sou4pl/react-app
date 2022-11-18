@@ -36,6 +36,18 @@ const initialState = {
       listId: '2',
       title: 'Facebook',
       icon: 'facebook',
+    },
+    {
+      id: '5',
+      listId: '2',
+      title: 'Instagram',
+      icon: 'instagram',
+    },
+    {
+      id: '6',
+      listId: '2',
+      title: 'Twitter',
+      icon: 'twitter',
     }
   ],
 
@@ -45,7 +57,11 @@ const initialState = {
     { id: '3', columnId: '2', isFavorite: false, title: 'Harry Potter' },
     { id: '4', columnId: '2', isFavorite: false, title: 'Star Wars' },
     { id: '5', columnId: '3', isFavorite: false, title: 'The Witcher' },
-    { id: '6', columnId: '3', isFavorite: false, title: 'Skyrim' }
+    { id: '6', columnId: '3', isFavorite: false, title: 'Skyrim' },
+    { id: '7', columnId: '4', isFavorite: false, title: 'Suchar_Codzienny' },
+    { id: '8', columnId: '4', isFavorite: false, title: 'Edyta Górniak' },
+    { id: '9', columnId: '5', isFavorite: false, title: 'Anna Pavlova' },
+    { id: '10', columnId: '6', isFavorite: false, title: 'Tygodnik NIE' },
   ],
 
   searchPhrase:  '',
