@@ -14,8 +14,10 @@ const Column = props => {
       </h2>
         <ul className={styles.cards}>
           {cards.map(card => <Card key={card.id} id={card.id} title={card.title} isFavorite={card.isFavorite} />)}
+          
         </ul>
         <CardForm columnId={props.id} />
+        <span className={styles.trash}><span className='fa fa-trash trash' /></span>
     </article>
   );
 };
