@@ -1,6 +1,6 @@
 import styles from './Card.module.scss'
 import { useDispatch } from 'react-redux';
-import { toggleCardFavorite, deleteCard } from '../../redux/cardsRedux';
+import { toggleCardFavorite, deleteCardByCardId } from '../../redux/cardsRedux';
 import clsx from 'clsx';
 
 const Card = ({title, id, isFavorite}) => {
@@ -13,7 +13,7 @@ const Card = ({title, id, isFavorite}) => {
 
   const handleDelete = e => {
     e.preventDefault();
-    dispatch(deleteCard(id));
+    dispatch(deleteCardByCardId(id));
   };
 
   return (
